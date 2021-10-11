@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				6,
 				-10
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "annoying_dog Left"
+			"fps": 24,
+			"name": "annoying_dog Left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-80
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "annoying_dog Right"
+			"fps": 24,
+			"name": "annoying_dog Right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-74
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "annoying_dog Down"
+			"fps": 24,
+			"name": "annoying_dog Down",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				59,
 				10
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "idle",
-			"indices": [],
-			"name": "annoying_dog Idle"
+			"fps": 24,
+			"name": "annoying_dog Idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				52
 			],
-			"loop": false,
-			"anim": "singUP",
 			"fps": 24,
-			"name": "annoying_dog Up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "annoying_dog Up"
 		}
 	],
 	"no_antialiasing": false,
@@ -70,8 +70,8 @@
 		215
 	],
 	"camera_position": [
-		430,
-		520
+		470,
+		630
 	],
 	"sing_duration": 6.1,
 	"scale": 0.3

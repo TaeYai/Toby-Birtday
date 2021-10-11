@@ -156,8 +156,8 @@ class TitleState extends MusicBeatState
 				FlxG.sound.music.fadeIn(4, 0, 0.7);
 			}
 		}
-
-		Conductor.changeBPM(102);
+		
+		Conductor.changeBPM(90);
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
@@ -175,6 +175,12 @@ class TitleState extends MusicBeatState
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
+		var titletext:FlxSprite  = new FlxSprite(0,0).loadGraphic(Paths.image('mainmenu/title'));
+		titletext.scrollFactor.set(0, 0);
+		titletext.updateHitbox();
+		titletext.screenCenter();
+		add(titletext);
+
 		swagShader = new ColorSwap();
 		if(!FlxG.save.data.psykaEasterEgg || !easterEggEnabled) {
 			gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.07);
@@ -190,9 +196,9 @@ class TitleState extends MusicBeatState
 			gfDance.animation.addByIndices('danceRight', 'psykaDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 		}
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
-		add(gfDance);
+		//add(gfDance);
 		gfDance.shader = swagShader.shader;
-		add(logoBl);
+		//add(logoBl);
 		//logoBl.shader = swagShader.shader;
 
 		titleText = new FlxSprite(100, FlxG.height * 0.8);
@@ -203,7 +209,7 @@ class TitleState extends MusicBeatState
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
 		// titleText.screenCenter(X);
-		add(titleText);
+		//add(titleText);
 
 		var logo:FlxSprite = new FlxSprite().loadGraphic(Paths.image('logo'));
 		logo.screenCenter();
@@ -264,6 +270,7 @@ class TitleState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		trace(curBeat);
 		if (FlxG.sound.music != null)
 			Conductor.songPosition = FlxG.sound.music.time;
 		// FlxG.watch.addQuick('amp', FlxG.sound.music.amplitude);
@@ -274,6 +281,7 @@ class TitleState extends MusicBeatState
 		}
 
 		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER;
+		
 
 		#if mobile
 		for (touch in FlxG.touches.list)
@@ -306,19 +314,27 @@ class TitleState extends MusicBeatState
 			{
 				if(titleText != null) titleText.animation.play('press');
 
-				FlxG.camera.flash(FlxColor.WHITE, 1);
-				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
+			
 
 				transitioning = true;
 				// FlxG.sound.music.stop();
 
-				new FlxTimer().start(1, function(tmr:FlxTimer)
-				{
 					MusicBeatState.switchState(new MainMenuState());
 					closedState = true;
-				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
 			}
+			else if(FlxG.keys.justPressed.Z)
+				{
+					if(titleText != null) titleText.animation.play('press');
+
+			
+
+				transitioning = true;
+				// FlxG.sound.music.stop();
+
+					MusicBeatState.switchState(new MainMenuState());
+					closedState = true;
+				}
 			else if(easterEggEnabled)
 			{
 				var finalKey:FlxKey = FlxG.keys.firstJustPressed();
@@ -433,7 +449,7 @@ class TitleState extends MusicBeatState
 				case 1:
 					createCoolText(['Psych Engine by'], 45);
 				// credTextShit.visible = true;
-				case 3:
+				case 2:
 					addMoreText('Shadow Mario', 45);
 					addMoreText('RiverOaken', 45);
 				// credTextShit.text += '\npresent...';
@@ -445,38 +461,38 @@ class TitleState extends MusicBeatState
 				// credTextShit.screenCenter();
 				case 5:
 					createCoolText(['This is a mod to'], -60);
-				case 7:
+				case 6:
 					addMoreText('This game right below lol', -60);
 					logoSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
-				case 8:
+				case 9:
 					deleteCoolText();
 					logoSpr.visible = false;
 				// credTextShit.visible = false;
 
 				// credTextShit.text = 'Shoutouts Tom Fulp';
 				// credTextShit.screenCenter();
-				case 9:
+				case 11:
 					createCoolText([curWacky[0]]);
 				// credTextShit.visible = true;
-				case 11:
+				case 12:
 					addMoreText(curWacky[1]);
 				// credTextShit.text += '\nlmao';
-				case 12:
+				case 14:
 					deleteCoolText();
 				// credTextShit.visible = false;
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
-				case 13:
-					addMoreText('Friday');
-				// credTextShit.visible = true;
-				case 14:
-					addMoreText('Night');
-				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Happy Birthday');
+				// credTextShit.visible = true;
+				case 17:
+					addMoreText('Toby');
+				// credTextShit.text += '\nNight';
+				case 18:
+					addMoreText('Fox'); // credTextShit.text += '\nFunkin';
 
-				case 16:
+				case 22:
 					skipIntro();
 			}
 		}
@@ -489,8 +505,8 @@ class TitleState extends MusicBeatState
 		if (!skippedIntro)
 		{
 			remove(logoSpr);
-
-			FlxG.camera.flash(FlxColor.WHITE, 4);
+			FlxG.sound.play(Paths.sound('sfx'), 1);
+			FlxG.sound.music.stop();
 			remove(credGroup);
 			skippedIntro = true;
 		}

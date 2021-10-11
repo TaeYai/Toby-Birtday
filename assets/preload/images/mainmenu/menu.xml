@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="freeplay idle0000" x="25" y="25" width="389" height="102"/>
+	<SubTexture name="freeplay select0000" x="439" y="25" width="389" height="102"/>
+	<SubTexture name="options idle0000" x="25" y="152" width="341" height="102"/>
+	<SubTexture name="options select0000" x="391" y="152" width="341" height="102"/>
+	<SubTexture name="story mode idle0000" x="25" y="279" width="485" height="102"/>
+	<SubTexture name="story mode select0000" x="25" y="406" width="485" height="102"/>
+</TextureAtlas>
