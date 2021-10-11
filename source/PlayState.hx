@@ -379,7 +379,23 @@ class PlayState extends MusicBeatState
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
 				}
-
+				case 'snowDin':					
+					var snowBack:FlxSprite = new FlxSprite(-450, -200).loadGraphic(Paths.image('snowBack', 'doggo'));
+					snowBack.setGraphicSize(Std.int(snowBack.width - 500));
+					snowBack.updateHitbox();
+					snowBack.antialiasing = true;
+					snowBack.scrollFactor.set(0.95, 0.95);
+					snowBack.active = false;
+					add(snowBack);
+		
+					if(!ClientPrefs.lowQuality) { 
+						var snowFront:FlxSprite = new FlxSprite(-450, -200).loadGraphic(Paths.image('snowFront', 'doggo'));
+						snowFront.setGraphicSize(Std.int(snowFront.width - 300));
+						snowFront.antialiasing = true;
+						snowFront.updateHitbox();
+						snowFront.active = false;
+						add(snowFront);
+				}
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
 					halloweenBG = new BGSprite('halloween_bg', -200, -100, ['halloweem bg0', 'halloweem bg lightning strike']);

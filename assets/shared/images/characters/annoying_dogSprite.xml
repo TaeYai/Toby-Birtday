@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="annoying_dog.png">
+<SubTexture name="annoying_dog Idle0000" x="0" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Idle0001" x="0" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Idle0002" x="2040" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Idle0003" x="2040" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Idle0004" x="4080" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Idle0005" x="4080" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Idle0006" x="6120" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Idle0012" x="6120" y="0" width="2040" height="1437" frameX="0" frameY="0" frameWidth="2040" frameHeight="1437" />
+<SubTexture name="annoying_dog Down0000" x="0" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Down0001" x="1645" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Down0002" x="3290" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Down0003" x="4935" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Down0004" x="3290" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Down0005" x="4935" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Down0006" x="3290" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Down0007" x="4935" y="1437" width="1645" height="1050" frameX="0" frameY="0" frameWidth="1645" frameHeight="1050" />
+<SubTexture name="annoying_dog Left0000" x="0" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Left0001" x="1495" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Left0002" x="2990" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Left0003" x="4485" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Left0004" x="2990" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Left0005" x="4485" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Left0006" x="2990" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Left0007" x="4485" y="2487" width="1495" height="1272" frameX="0" frameY="0" frameWidth="1495" frameHeight="1272" />
+<SubTexture name="annoying_dog Right0000" x="0" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Right0001" x="1746" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Right0002" x="3492" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Right0003" x="5238" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Right0004" x="3492" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Right0005" x="5238" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Right0006" x="3492" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Right0007" x="5238" y="3759" width="1746" height="1096" frameX="0" frameY="0" frameWidth="1746" frameHeight="1096" />
+<SubTexture name="annoying_dog Up0000" x="0" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+<SubTexture name="annoying_dog Up0001" x="1565" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+<SubTexture name="annoying_dog Up0002" x="3130" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+<SubTexture name="annoying_dog Up0003" x="4695" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+<SubTexture name="annoying_dog Up0004" x="3130" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+<SubTexture name="annoying_dog Up0005" x="4695" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+<SubTexture name="annoying_dog Up0006" x="3130" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+<SubTexture name="annoying_dog Up0007" x="4695" y="4855" width="1565" height="1515" frameX="0" frameY="0" frameWidth="1565" frameHeight="1515" />
+</TextureAtlas>
